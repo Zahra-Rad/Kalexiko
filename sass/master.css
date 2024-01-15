@@ -136,4 +136,52 @@ main > .row > div > header > .row > h4::after {
   top: 50%;
   left: 30px;
   background-color: red;
+}
+main > .row > div > section {
+  width: 100%;
+  height: 88%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+main > .row > div > section > article {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 9%;
+}
+main > .row > div > section > article > * {
+  color: white;
+  font-family: Helvetica, sans-serif;
+}
+main > .row > div > section > article > h2 {
+  font-size: 55px;
+  line-height: 85px;
+  margin-top: 25px;
+  letter-spacing: 1px;
+}
+main > .row > div > section > article > h2 > a {
+  color: red;
+  text-decoration: none;
+}
+main > .row > div > section > article > p {
+  margin: 20px 0 30px;
+  padding-right: 50px;
+  line-height: 30px;
+  font-weight: bold;
+}
+main > .row > div > section > article > div {
+  width: 100%;
+  padding-top: 70px;
+}
+main > .row > div > section > article > div > p {
+  font-size: 12px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) translateY(-15px);
+  font-weight: bolder;
+}
+main > .row > div > section > div {
+  width: 50%;
 }/*# sourceMappingURL=master.css.map */
