@@ -65,6 +65,11 @@ main {
             position: relative;
             display: flex;
             color: white;
+            cursor: pointer;
+            transition: 0.3s all linear;
+            &:hover {
+              color: #676767;
+            }
             span {
               color: red;
               font-size: 11px;
@@ -129,73 +134,80 @@ main {
             display: flex;
             color: red;
             font-size: 16px;
+            cursor: pointer;
             &::after {
               content: "";
+              transition: 0.3s all linear;
               width: 40px;
               height: 1px;
               display: block;
               position: absolute;
               top: 50%;
-              left: 30px;
+              right: 80px;
               background-color: red;
+            }
+            &:hover {
+              &::after {
+                width: 20px;
+              }
             }
           }
         }
       }
-        >section{
-          width: 100%;
-          height: 88%;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          z-index: 1;
-          >article{
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 9%;
-            >*{
-              color: white;
-              font-family: Helvetica, sans-serif;
-            }
-            >h2{
-              font-size: 55px;
-              line-height: 85px;
-              margin-top: 25px;
-              letter-spacing: 1px;
-              >a{
-                color: red;
-                text-decoration: none;
-              }
-            }
-            >p{
-              margin: 20px 0 30px;
-              padding-right: 50px;
-              line-height: 30px;
-              font-weight: bold;
-            }
-            >div{
-              width: 100%;
-              padding-top: 70px;
-              >p{
-                font-size: 12px;
-                transform-origin: 0 0;
-                transform: rotate(-90deg) translateY(-15px);
-                font-weight: bolder;
-              }
+      > section {
+        width: 100%;
+        height: 88%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        > article {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 9%;
+          > * {
+            color: white;
+            font-family: Helvetica, sans-serif;
+          }
+          > h2 {
+            font-size: 55px;
+            line-height: 85px;
+            margin-top: 25px;
+            letter-spacing: 1px;
+            > a {
+              color: red;
+              text-decoration: none;
             }
           }
-          >div{
-            width: 50%;
+          > p {
+            margin: 20px 0 30px;
+            padding-right: 50px;
+            line-height: 30px;
+            font-weight: bold;
+          }
+          > div {
+            width: 100%;
+            padding-top: 70px;
+            > p {
+              font-size: 12px;
+              transform-origin: 0 0;
+              transform: rotate(-90deg) translateY(-15px);
+              font-weight: bolder;
+            }
+          }
+        }
+        > div {
+          width: 50%;
           //   >p{
           //     >span{}
           //   }
           //   >div{
           //     >span{}
           //   }
-          }
         }
+      }
     }
   }
 }

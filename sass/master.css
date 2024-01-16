@@ -63,6 +63,11 @@ main > .row > div > header > .row > h3 {
   position: relative;
   display: flex;
   color: white;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+main > .row > div > header > .row > h3:hover {
+  color: #676767;
 }
 main > .row > div > header > .row > h3 span {
   color: red;
@@ -126,16 +131,21 @@ main > .row > div > header > .row > h4 {
   display: flex;
   color: red;
   font-size: 16px;
+  cursor: pointer;
 }
 main > .row > div > header > .row > h4::after {
   content: "";
+  transition: 0.3s all linear;
   width: 40px;
   height: 1px;
   display: block;
   position: absolute;
   top: 50%;
-  left: 30px;
+  right: 80px;
   background-color: red;
+}
+main > .row > div > header > .row > h4:hover::after {
+  width: 20px;
 }
 main > .row > div > section {
   width: 100%;
