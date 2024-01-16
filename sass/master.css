@@ -220,12 +220,32 @@ main > .row > div > section > article > p {
 main > .row > div > section > article > div {
   width: 100%;
   padding-top: 70px;
+  position: relative;
 }
 main > .row > div > section > article > div > p {
   font-size: 12px;
   transform-origin: 0 0;
   transform: rotate(-90deg) translateY(-15px);
   font-weight: bolder;
+}
+main > .row > div > section > article > div::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: red;
+  bottom: -100%;
+  border-radius: 50%;
+  left: -10px;
+}
+main > .row > div > section > article > div::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #343534;
+  position: absolute;
+  bottom: calc(-100% + 9px);
+  left: -9px;
 }
 main > .row > div > section > div {
   width: 50%;
