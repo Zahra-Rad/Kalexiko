@@ -1,4 +1,5 @@
 $primaryColor: #141313;
+$secondaryColor: #d60a01;
 $primaryFont: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 $secondaryFont: Helvetica, sans-serif;
 * {
@@ -12,7 +13,7 @@ $secondaryFont: Helvetica, sans-serif;
   width: 100%;
 }
 %bt {
-  border: 2px solid red;
+  border: 2px solid $secondaryColor;
 }
 
 main {
@@ -71,7 +72,7 @@ main {
               color: #676767;
             }
             span {
-              color: red;
+              color: $secondaryColor;
               font-size: 11px;
               position: absolute;
               top: 33%;
@@ -110,7 +111,7 @@ main {
                     height: 4px;
                     border-radius: 50%;
                     display: none;
-                    background-color: red;
+                    background-color: $secondaryColor;
                     position: absolute;
                     top: -60%;
                     left: calc(50% - 2px);
@@ -132,7 +133,7 @@ main {
             align-items: center;
             position: relative;
             display: flex;
-            color: red;
+            color: $secondaryColor;
             font-size: 16px;
             cursor: pointer;
             &::after {
@@ -144,7 +145,7 @@ main {
               position: absolute;
               top: 50%;
               right: 80px;
-              background-color: red;
+              background-color: $secondaryColor;
             }
             &:hover {
               &::after {
@@ -177,7 +178,7 @@ main {
             margin-top: 25px;
             letter-spacing: 1px;
             > a {
-              color: red;
+              color: $secondaryColor;
               height: 85px;
               width: fit-content;
               text-decoration: none;
@@ -191,7 +192,7 @@ main {
                 height: 2px;
                 position: absolute;
                 display: block;
-                background-color: red;
+                background-color: $secondaryColor;
                 left: 0;
                 transition: 0.4s all linear;
                 bottom: 0;
@@ -202,7 +203,7 @@ main {
                 height: 2px;
                 position: absolute;
                 display: block;
-                background-color: red;
+                background-color: $secondaryColor;
                 left: -200%;
                 transition: 0.4s all linear;
 
@@ -234,18 +235,18 @@ main {
               transform: rotate(-90deg) translateY(-15px);
               font-weight: bolder;
             }
-            &::before{
-              content: '';
+            &::before {
+              content: "";
               position: absolute;
               width: 4px;
               height: 4px;
-              background-color: red;
+              background-color: $secondaryColor;
               bottom: -100%;
               border-radius: 50%;
               left: -10px;
             }
-            &::after{
-              content: '';
+            &::after {
+              content: "";
               width: 1px;
               height: 100%;
               background-color: #343534;
@@ -257,12 +258,95 @@ main {
         }
         > div {
           width: 50%;
-          //   >p{
-          //     >span{}
-          //   }
-          //   >div{
-          //     >span{}
-          //   }
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-end;
+          position: relative;
+          > p {
+            font-size: 13px;
+            color: #7c7d7f;
+            transform-origin: 100 100;
+            transform: rotate(-90deg);
+            position: absolute;
+            font-weight: lighter;
+            top: 43%;
+            right: 0px;
+            > span {
+              color: white;
+            }
+          }
+          > div {
+            width: 355px;
+            height: 138px;
+            background-color: $secondaryColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bolder;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            &::before {
+              content: "";
+              background-color: #b60700;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: -100%;
+              top: 0;
+              transition: 0.4s all linear;
+            }
+            &::after {
+              content: "";
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              background: white;
+              position: absolute;
+              top: 50%;
+              left: 80px;
+            }
+            > span {
+              z-index: 2;
+              &::before {
+                content: "";
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: white;
+                position: absolute;
+                top: 50%;
+                left: 70px;
+                transition: 0.3s all linear;
+              }
+              &::after {
+                content: "";
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: white;
+                position: absolute;
+                left: 90px;
+                top: 50%;
+                transition: 0.3s all linear;
+              }
+            }
+            &:hover {
+              &::before {
+                left: 0;
+              }
+              > span {
+                &::before,
+                &::after {
+                  left: 80px;
+                }
+              }
+            }
+          }
         }
       }
     }
