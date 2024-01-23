@@ -7,6 +7,9 @@ $secondaryFont: Helvetica, sans-serif;
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -442,7 +445,7 @@ main {
               display: flex;
               flex-direction: column;
               justify-content: space-around;
-              padding: 100px 0;
+              padding: 100px 0 100px 20px;
               > h3 {
                 font-size: 40px;
                 font-weight: bolder;
@@ -455,6 +458,9 @@ main {
                 font-weight: lighter;
                 line-height: 30px;
               }
+              >a{
+                
+              }
               &::before {
                 content: "";
                 width: 1px;
@@ -462,7 +468,7 @@ main {
                 background-color: #343534;
                 position: absolute;
                 top: -52px;
-                left: 0;
+                left: 20px;
               }
               &::after {
                 content: "";
@@ -471,7 +477,7 @@ main {
                 height: 4px;
                 background-color: #d60a01;
                 top: -4px;
-                left: -2px;
+                left: 18px;
                 border-radius: 50%;
               }
             }
