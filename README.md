@@ -1,6 +1,6 @@
 # Kalexiko's Landing Page
 
-![view](https://github.com/Zahra-Rad/Kalexiko/assets/118894293/95bdc8f9-b557-4efe-974c-2c87b8c0b09d)
+![view top section](https://github.com/Zahra-Rad/Kalexiko/assets/118894293/8cb14324-5169-43ac-92f4-21e5a2bd9abf)
 
 - 📎 [Demo Project](https://zahra-rad.github.io/Kalexiko/)
 
