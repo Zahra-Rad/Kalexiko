@@ -21,7 +21,8 @@ main {
   background-color: $primaryColor;
   font-family: $primaryFont;
   > .row {
-    > div {
+    // top section
+    > .top {
       width: 100%;
       height: 100vh;
       position: relative;
@@ -139,7 +140,7 @@ main {
             &::after {
               content: "";
               transition: 0.3s all linear;
-              width: 40px;
+              width: 45px;
               height: 1px;
               display: block;
               position: absolute;
@@ -347,6 +348,136 @@ main {
               }
             }
           }
+        }
+      }
+    }
+    // end of top
+    > .content {
+      width: 100%;
+      background-color: $primaryColor;
+      > .row {
+        &:first-of-type {
+          padding: 50px 3% 10px 9%;
+          justify-content: space-between;
+          > div {
+            &:first-of-type {
+              width: 45%;
+              background: url(../img/block2bg.png) left no-repeat;
+              background-size: contain;
+              display: flex;
+              flex-direction: column;
+              padding: 100px 50px 50px 0;
+              > figure {
+                width: 350px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                font-family: $secondaryFont;
+                &:first-of-type {
+                  margin-left: -50px;
+                  > img {
+                    order: 2;
+                  }
+                  > figcaption {
+                    order: 1;
+                  }
+                  span {
+                    order: 3;
+                    right: -45px;
+                    bottom: -10px;
+                  }
+                }
+                &:last-of-type {
+                  margin-top: 60px;
+                  align-self: flex-end;
+                  justify-content: flex-end;
+                  display: flex;
+                  flex-direction: column;
+                  > img {
+                    order: 2;
+                  }
+                  > figcaption {
+                    position: absolute;
+                    right: 5px;
+                    bottom: -10px;
+                    order: 3;
+                  }
+                  span {
+                    order: 1;
+                    left: 20px;
+                    top: 60px;
+                  }
+                }
+                * {
+                  text-transform: capitalize;
+                }
+                > img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+                > figcaption {
+                  font-size: 22px;
+                  color: $secondaryColor;
+                  letter-spacing: 1.5px;
+                  font-style: italic;
+                  font-weight: bolder;
+                }
+                > span {
+                  color: white;
+                  position: absolute;
+                  rotate: -90deg;
+                  transform-origin: left bottom;
+                  font-weight: bold;
+                  font-size: 10px;
+                }
+              }
+            }
+            &:last-of-type {
+              width: 45%;
+              position: relative;
+              font-family: $secondaryFont;
+              color: white;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              padding: 100px 0;
+              > h3 {
+                font-size: 40px;
+                font-weight: bolder;
+                > span {
+                  color: $secondaryColor;
+                }
+              }
+              > p {
+                font-size: 16px;
+                font-weight: lighter;
+                line-height: 30px;
+              }
+              &::before {
+                content: "";
+                width: 1px;
+                height: 50px;
+                background-color: #343534;
+                position: absolute;
+                top: -52px;
+                left: 0;
+              }
+              &::after {
+                content: "";
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                background-color: #d60a01;
+                top: -4px;
+                left: -2px;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+        &:last-of-type {
         }
       }
     }

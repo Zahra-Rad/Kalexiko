@@ -15,13 +15,13 @@ main {
   background-color: #141313;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-main > .row > div {
+main > .row > .top {
   width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
 }
-main > .row > div::after {
+main > .row > .top::after {
   content: "";
   display: flex;
   width: 100%;
@@ -31,7 +31,7 @@ main > .row > div::after {
   top: 0;
   left: 0;
 }
-main > .row > div > video {
+main > .row > .top > video {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -39,7 +39,7 @@ main > .row > div > video {
   left: 0;
   scale: 1.3;
 }
-main > .row > div > header {
+main > .row > .top > header {
   width: 100%;
   height: 12%;
   position: absolute;
@@ -52,10 +52,10 @@ main > .row > div > header {
   font-size: 14px;
   border-bottom: 1px solid #343534;
 }
-main > .row > div > header > .row {
+main > .row > .top > header > .row {
   height: 100%;
 }
-main > .row > div > header > .row > h3 {
+main > .row > .top > header > .row > h3 {
   width: 10%;
   height: 100%;
   justify-content: flex-start;
@@ -66,32 +66,32 @@ main > .row > div > header > .row > h3 {
   cursor: pointer;
   transition: 0.3s all linear;
 }
-main > .row > div > header > .row > h3:hover {
+main > .row > .top > header > .row > h3:hover {
   color: #676767;
 }
-main > .row > div > header > .row > h3 span {
+main > .row > .top > header > .row > h3 span {
   color: #d60a01;
   font-size: 11px;
   position: absolute;
   top: 33%;
   left: 65px;
 }
-main > .row > div > header > .row > nav {
+main > .row > .top > header > .row > nav {
   width: 80%;
 }
-main > .row > div > header > .row > nav > ul {
+main > .row > .top > header > .row > nav > ul {
   width: 100%;
   height: 100%;
   justify-content: center;
 }
-main > .row > div > header > .row > nav > ul > li {
+main > .row > .top > header > .row > nav > ul > li {
   list-style-type: none;
   padding: 0 38px;
   height: 100%;
   display: flex;
   align-items: center;
 }
-main > .row > div > header > .row > nav > ul > li > a {
+main > .row > .top > header > .row > nav > ul > li > a {
   text-decoration: none;
   color: white;
   font-size: 16px;
@@ -99,13 +99,13 @@ main > .row > div > header > .row > nav > ul > li > a {
   position: relative;
   transition: 0.3s all linear;
 }
-main > .row > div > header > .row > nav > ul > li > a > img {
+main > .row > .top > header > .row > nav > ul > li > a > img {
   transition: 0.3s all linear;
 }
-main > .row > div > header > .row > nav > ul > li > a > img:hover {
+main > .row > .top > header > .row > nav > ul > li > a > img:hover {
   filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(113deg) brightness(105%) contrast(101%);
 }
-main > .row > div > header > .row > nav > ul > li > a::before {
+main > .row > .top > header > .row > nav > ul > li > a::before {
   content: "";
   width: 4px;
   height: 4px;
@@ -116,13 +116,13 @@ main > .row > div > header > .row > nav > ul > li > a::before {
   top: -60%;
   left: calc(50% - 2px);
 }
-main > .row > div > header > .row > nav > ul > li > a:not(:nth-of-type(3)):hover {
+main > .row > .top > header > .row > nav > ul > li > a:not(:nth-of-type(3)):hover {
   color: #676767;
 }
-main > .row > div > header > .row > nav > ul > li > a:not(:nth-of-type(3)):hover::before {
+main > .row > .top > header > .row > nav > ul > li > a:not(:nth-of-type(3)):hover::before {
   display: block;
 }
-main > .row > div > header > .row > h4 {
+main > .row > .top > header > .row > h4 {
   width: 10%;
   height: 100%;
   justify-content: flex-end;
@@ -133,10 +133,10 @@ main > .row > div > header > .row > h4 {
   font-size: 16px;
   cursor: pointer;
 }
-main > .row > div > header > .row > h4::after {
+main > .row > .top > header > .row > h4::after {
   content: "";
   transition: 0.3s all linear;
-  width: 40px;
+  width: 45px;
   height: 1px;
   display: block;
   position: absolute;
@@ -144,10 +144,10 @@ main > .row > div > header > .row > h4::after {
   right: 80px;
   background-color: #d60a01;
 }
-main > .row > div > header > .row > h4:hover::after {
+main > .row > .top > header > .row > h4:hover::after {
   width: 20px;
 }
-main > .row > div > section {
+main > .row > .top > section {
   width: 100%;
   height: 88%;
   position: absolute;
@@ -155,24 +155,24 @@ main > .row > div > section {
   bottom: 0;
   z-index: 1;
 }
-main > .row > div > section > article {
+main > .row > .top > section > article {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 9%;
 }
-main > .row > div > section > article > * {
+main > .row > .top > section > article > * {
   color: white;
   font-family: Helvetica, sans-serif;
 }
-main > .row > div > section > article > h2 {
+main > .row > .top > section > article > h2 {
   font-size: 55px;
   line-height: 85px;
   margin-top: 25px;
   letter-spacing: 1px;
 }
-main > .row > div > section > article > h2 > a {
+main > .row > .top > section > article > h2 > a {
   color: #d60a01;
   height: 85px;
   width: -moz-fit-content;
@@ -183,7 +183,7 @@ main > .row > div > section > article > h2 > a {
   overflow: hidden;
   margin-bottom: -25px;
 }
-main > .row > div > section > article > h2 > a::before {
+main > .row > .top > section > article > h2 > a::before {
   content: "";
   width: 100%;
   height: 2px;
@@ -194,7 +194,7 @@ main > .row > div > section > article > h2 > a::before {
   transition: 0.4s all linear;
   bottom: 0;
 }
-main > .row > div > section > article > h2 > a::after {
+main > .row > .top > section > article > h2 > a::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -205,30 +205,30 @@ main > .row > div > section > article > h2 > a::after {
   transition: 0.4s all linear;
   bottom: 0;
 }
-main > .row > div > section > article > h2 > a:hover::before {
+main > .row > .top > section > article > h2 > a:hover::before {
   left: 300%;
 }
-main > .row > div > section > article > h2 > a:hover::after {
+main > .row > .top > section > article > h2 > a:hover::after {
   left: 0;
 }
-main > .row > div > section > article > p {
+main > .row > .top > section > article > p {
   margin: 20px 0 30px;
   padding-right: 50px;
   line-height: 30px;
   font-weight: bold;
 }
-main > .row > div > section > article > div {
+main > .row > .top > section > article > div {
   width: 100%;
   padding-top: 70px;
   position: relative;
 }
-main > .row > div > section > article > div > p {
+main > .row > .top > section > article > div > p {
   font-size: 12px;
   transform-origin: 0 0;
   transform: rotate(-90deg) translateY(-15px);
   font-weight: bolder;
 }
-main > .row > div > section > article > div::before {
+main > .row > .top > section > article > div::before {
   content: "";
   position: absolute;
   width: 4px;
@@ -238,7 +238,7 @@ main > .row > div > section > article > div::before {
   border-radius: 50%;
   left: -10px;
 }
-main > .row > div > section > article > div::after {
+main > .row > .top > section > article > div::after {
   content: "";
   width: 1px;
   height: 100%;
@@ -247,7 +247,7 @@ main > .row > div > section > article > div::after {
   bottom: calc(-100% + 9px);
   left: -9px;
 }
-main > .row > div > section > div {
+main > .row > .top > section > div {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -255,7 +255,7 @@ main > .row > div > section > div {
   align-items: flex-end;
   position: relative;
 }
-main > .row > div > section > div > p {
+main > .row > .top > section > div > p {
   font-size: 13px;
   color: #7c7d7f;
   transform-origin: 100 100;
@@ -265,10 +265,10 @@ main > .row > div > section > div > p {
   top: 43%;
   right: 0px;
 }
-main > .row > div > section > div > p > span {
+main > .row > .top > section > div > p > span {
   color: white;
 }
-main > .row > div > section > div > div {
+main > .row > .top > section > div > div {
   width: 355px;
   height: 138px;
   background-color: #d60a01;
@@ -283,7 +283,7 @@ main > .row > div > section > div > div {
   overflow: hidden;
   cursor: pointer;
 }
-main > .row > div > section > div > div::before {
+main > .row > .top > section > div > div::before {
   content: "";
   background-color: #b60700;
   position: absolute;
@@ -293,7 +293,7 @@ main > .row > div > section > div > div::before {
   top: 0;
   transition: 0.4s all linear;
 }
-main > .row > div > section > div > div::after {
+main > .row > .top > section > div > div::after {
   content: "";
   width: 4px;
   height: 4px;
@@ -303,10 +303,10 @@ main > .row > div > section > div > div::after {
   top: 50%;
   left: 80px;
 }
-main > .row > div > section > div > div > span {
+main > .row > .top > section > div > div > span {
   z-index: 2;
 }
-main > .row > div > section > div > div > span::before {
+main > .row > .top > section > div > div > span::before {
   content: "";
   width: 4px;
   height: 4px;
@@ -317,7 +317,7 @@ main > .row > div > section > div > div > span::before {
   left: 70px;
   transition: 0.3s all linear;
 }
-main > .row > div > section > div > div > span::after {
+main > .row > .top > section > div > div > span::after {
   content: "";
   width: 4px;
   height: 4px;
@@ -328,9 +328,133 @@ main > .row > div > section > div > div > span::after {
   top: 50%;
   transition: 0.3s all linear;
 }
-main > .row > div > section > div > div:hover::before {
+main > .row > .top > section > div > div:hover::before {
   left: 0;
 }
-main > .row > div > section > div > div:hover > span::before, main > .row > div > section > div > div:hover > span::after {
+main > .row > .top > section > div > div:hover > span::before, main > .row > .top > section > div > div:hover > span::after {
   left: 80px;
+}
+main > .row > .content {
+  width: 100%;
+  background-color: #141313;
+}
+main > .row > .content > .row:first-of-type {
+  padding: 50px 3% 10px 9%;
+  justify-content: space-between;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type {
+  width: 45%;
+  background: url(../img/block2bg.png) left no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 50px 50px 0;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type > figure {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: Helvetica, sans-serif;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type > figure:first-of-type {
+  margin-left: -50px;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type > figure:first-of-type > img {
+  order: 2;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type > figure:first-of-type > figcaption {
+  order: 1;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type > figure:first-of-type span {
+  order: 3;
+  right: -45px;
+  bottom: -10px;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type > figure:last-of-type {
+  margin-top: 60px;
+  align-self: flex-end;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type > figure:last-of-type > img {
+  order: 2;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type > figure:last-of-type > figcaption {
+  position: absolute;
+  right: 5px;
+  bottom: -10px;
+  order: 3;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type > figure:last-of-type span {
+  order: 1;
+  left: 20px;
+  top: 60px;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type > figure * {
+  text-transform: capitalize;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type > figure > figcaption {
+  font-size: 22px;
+  color: #d60a01;
+  letter-spacing: 1.5px;
+  font-style: italic;
+  font-weight: bolder;
+}
+main > .row > .content > .row:first-of-type > div:first-of-type > figure > span {
+  color: white;
+  position: absolute;
+  rotate: -90deg;
+  transform-origin: left bottom;
+  font-weight: bold;
+  font-size: 10px;
+}
+main > .row > .content > .row:first-of-type > div:last-of-type {
+  width: 45%;
+  position: relative;
+  font-family: Helvetica, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 100px 0;
+}
+main > .row > .content > .row:first-of-type > div:last-of-type > h3 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+main > .row > .content > .row:first-of-type > div:last-of-type > h3 > span {
+  color: #d60a01;
+}
+main > .row > .content > .row:first-of-type > div:last-of-type > p {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 30px;
+}
+main > .row > .content > .row:first-of-type > div:last-of-type::before {
+  content: "";
+  width: 1px;
+  height: 50px;
+  background-color: #343534;
+  position: absolute;
+  top: -52px;
+  left: 0;
+}
+main > .row > .content > .row:first-of-type > div:last-of-type::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #d60a01;
+  top: -4px;
+  left: -2px;
+  border-radius: 50%;
 }/*# sourceMappingURL=master.css.map */
