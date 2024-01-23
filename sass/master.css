@@ -443,6 +443,35 @@ main > .row > .content > .row:first-of-type > div:last-of-type > p {
   font-weight: lighter;
   line-height: 30px;
 }
+main > .row > .content > .row:first-of-type > div:last-of-type > a {
+  width: 180px;
+  height: 80px;
+  background-color: #1f1f1f;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bolder;
+  position: relative;
+}
+main > .row > .content > .row:first-of-type > div:last-of-type > a > span {
+  z-index: 2;
+}
+main > .row > .content > .row:first-of-type > div:last-of-type > a::before {
+  content: "";
+  background-color: #d60a01;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.2s linear;
+}
+main > .row > .content > .row:first-of-type > div:last-of-type > a:hover::before {
+  width: 100%;
+}
 main > .row > .content > .row:first-of-type > div:last-of-type::before {
   content: "";
   width: 1px;
