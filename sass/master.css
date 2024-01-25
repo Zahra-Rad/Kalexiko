@@ -14,6 +14,14 @@ a {
   width: 100%;
 }
 
+main > .row > section .row, main > .row > section .row > div:last-of-type > div:last-of-type, main > .row > section .row > div:last-of-type > div:first-of-type {
+  border: 2px solid #d60a01;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 main {
   width: 100%;
   background-color: #141313;
@@ -490,4 +498,186 @@ main > .row > .content > .row:first-of-type > div:last-of-type::after {
   top: -4px;
   left: 18px;
   border-radius: 50%;
+}
+main > .row > .content > .row:last-of-type {
+  width: 100%;
+  padding: 40px 7% 40px calc(9% + 10px);
+  position: relative;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+main > .row > .content > .row:last-of-type::before {
+  content: "";
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  background-color: #181717;
+  right: 0;
+  top: 0;
+}
+main > .row > .content > .row:last-of-type > h2 {
+  z-index: 2;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+main > .row > .content > .row:last-of-type > section {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main > .row > .content > .row:last-of-type > section > a {
+  width: 30%;
+  color: white;
+  margin: 30px 0;
+}
+main > .row > .content > .row:last-of-type > section > a > div {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+main > .row > .content > .row:last-of-type > section > a > div > figure {
+  display: flex;
+}
+main > .row > .content > .row:last-of-type > section > a > div > figure > img {
+  width: -moz-fit-content;
+  width: fit-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s linear;
+}
+main > .row > .content > .row:last-of-type > section > a > div > h3 {
+  font-size: 22px;
+  padding: 0 25px;
+  transition: 0.3s linear;
+  display: flex;
+  flex-direction: column;
+}
+main > .row > .content > .row:last-of-type > section > a > div > h3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  transition: 0.3s linear;
+  margin-top: 5px;
+  background-color: transparent;
+  border-bottom: 2px dotted #d60a01;
+  opacity: 0;
+}
+main > .row > .content > .row:last-of-type > section > a > p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 30px;
+}
+main > .row > .content > .row:last-of-type > section > a:hover > div > figure > img {
+  filter: grayscale(1) brightness(5) sepia(0.5);
+}
+main > .row > .content > .row:last-of-type > section > a:hover > div > h3 {
+  color: #d60a01;
+}
+main > .row > .content > .row:last-of-type > section > a:hover > div > h3::after {
+  opacity: 1;
+}
+main > .row > section {
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+main > .row > section .row {
+  width: 82%;
+}
+main > .row > section .row > div:first-of-type {
+  width: 100%;
+  height: 135px;
+  font-family: Helvetica, sans-serif;
+}
+main > .row > section .row > div:first-of-type > a {
+  width: 30.5%;
+  height: 135px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #d60a01;
+  text-transform: uppercase;
+  z-index: 2;
+}
+main > .row > section .row > div:first-of-type > a:hover ~ h2 {
+  color: white;
+}
+main > .row > section .row > div:first-of-type > a:hover ~ h2::before {
+  left: 0;
+}
+main > .row > section .row > div:first-of-type > h2 {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 25px;
+  font-size: 42px;
+  transition: 0.3s linear;
+}
+main > .row > section .row > div:first-of-type > h2::before {
+  content: "";
+  width: 69.5%;
+  height: 135px;
+  position: absolute;
+  left: 69.5%;
+  top: 0;
+  background-color: #d60a01;
+  transition: 0.3s linear;
+  justify-self: end;
+}
+main > .row > section .row > div:first-of-type > h2 > span {
+  z-index: 5;
+}
+main > .row > section .row > div:last-of-type {
+  width: 100%;
+  display: flex;
+}
+main > .row > section .row > div:last-of-type > div:first-of-type {
+  width: 74%;
+}
+main > .row > section .row > div:last-of-type > div:first-of-type > div {
+  display: flex;
+  justify-content: space-between;
+}
+main > .row > section .row > div:last-of-type > div:first-of-type > div > div:first-of-type {
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 25px;
+}
+main > .row > section .row > div:last-of-type > div:first-of-type > div > div:first-of-type > h4 {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 25px;
+  font-weight: bold;
+}
+main > .row > section .row > div:last-of-type > div:first-of-type > div > div:first-of-type > p {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 0;
+}
+main > .row > section .row > div:last-of-type > div:first-of-type > div > div:last-of-type > p > span {
+  color: #343534;
+}
+main > .row > section .row > div:last-of-type > div:last-of-type {
+  width: 26%;
+}
+main > .row > section .row > div:last-of-type > div:last-of-type > figure {
+  width: 320px;
+  height: 175px;
+}
+main > .row > section .row > div:last-of-type > div:last-of-type > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=master.css.map */
