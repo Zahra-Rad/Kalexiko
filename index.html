@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalexiko</title>
     <link rel="stylesheet" href="sass/master.css" />
+    <link rel="stylesheet" href="iconBoot/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -176,7 +177,7 @@
             </div>
             <!-- end of main content -->
             <!-- slider -->
-            <section>
+            <section class="slider">
                 <div class="row">
                     <div>
                         <a href="">All projects</a>
@@ -190,17 +191,22 @@
                                     <p>Strategy / User Interface Design / Web Application</p>
                                 </div>
                                 <div>
-                                    <p>01   /   <span>03</span></p>
-                                    <span></span>
-                                    <span></span>
+                                    <p><span>01</span>/<span>03</span></p>
+                                    <div>
+                                        <span class="bi bi-arrow-left"></span>
+                                        <span class="bi bi-arrow-right"></span>
+                                    </div>
                                 </div>
                             </div>
                             <figure>
                                 <img src="img/thumb-lightwave.jpg" alt="">
+                                <figcaption>
+                                    <a href="">view project</a>
+                                </figcaption>
                             </figure>
                         </div>
                         <div>
-                            <figure>
+                            <figure class="active">
                                 <img src="img/thumb-lightwave.jpg" alt="">
                                 <figcaption>LightWave RF</figcaption>
                             </figure>
@@ -210,13 +216,47 @@
                             </figure>
                             <figure>
                                 <img src="img/thumb-mymedsuk.jpg" alt="">
-                                <figcaption></figcaption>
+                                <figcaption>MyMedsUK</figcaption>
                             </figure>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- end of slider -->
+            <!-- clients -->
+            <div class="client">
+                <div class="row">
+                    <h5>Our Clients</h5>
+                    <p>Our proud portfolio of clients has been built over years of dedication by allocating our
+                        resources to projects
+                        smartly
+                        to build lifetime relationships.</p>
+                    <div>
+                        <figure><img src="img/lightwave-1x.png" alt=""></figure>
+                        <figure><img src="img/biasi-1x.png" alt=""></figure>
+                        <figure><img src="img/interserve-1x.png" alt=""></figure>
+                        <figure><img src="img/made-in-midlands-1x.png" alt=""></figure>
+                        <figure><img src="img/rewritingthebook-thelibraryofbirmingham-1x.png" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+            <!-- end of clients -->
+            <!-- thoughts -->
+            <section class="thoughts">
+                <h3></h3>
+                <div class="row">
+                    <figure>
+                        <img src="" alt="">
+                        <figcaption>
+                            <h4></h4>
+                            <p></p>
+                        </figcaption>
+                    </figure>
+                    
+                </div>
+                <div></div>
+            </section>
+            <!-- end of thoughts -->
         </div>
     </main>
 </body>
