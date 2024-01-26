@@ -24,13 +24,13 @@ body::-webkit-scrollbar {
 
 main {
   width: 100%;
-  background-color: $primaryColor;
   font-family: $primaryFont;
   overflow: hidden;
   > .row {
     // top section
     > .top {
       width: 100%;
+      background-color: $primaryColor;
       height: 100vh;
       position: relative;
       overflow: hidden;
@@ -827,37 +827,38 @@ main {
     }
     // end of slider
     // clients
-    > .client{
+    > .client {
       background-color: #fff;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      >.row{
+      > .row {
         flex-direction: column;
         display: flex;
         width: 82%;
         padding: 100px 0;
-        >h5{
+        > h5 {
           font-family: $secondaryFont;
-          font-size: 45px;
+          font-size: 43px;
           font-weight: bolder;
           width: 50%;
         }
-        >p{
+        > p {
           font-family: $primaryFont;
           width: 50%;
-          line-height: 30px;
-          color: #222222;
+          line-height: 35px;
+          color: #323232;
           font-size: 17px;
+          padding: 5px 0;
         }
-        >div{
+        > div {
           display: flex;
           justify-content: space-between;
           padding: 90px 40px;
-          >figure{
-            width: 15%;
-            >img{
+          > figure {
+            width: 13%;
+            > img {
               width: 100%;
               object-fit: cover;
             }
@@ -867,18 +868,94 @@ main {
     }
     // end of clients
     // thoughts
-    .thoughts{
-      >h3{}
-      >.row{
-        figure{
-          >img{}
-          >figcaption{
-            >h4{}
-            >p{}
+    .thoughts {
+      > h3 {
+        width: 100%;
+        display: flex;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-family: $secondaryFont;
+      }
+      > .row {
+        margin-top: 220px;
+        padding: 0 80px;
+        background-color: $primaryColor;
+        justify-content: space-evenly;
+        align-content: space-between;
+        figure {
+          margin-bottom: 65px;
+          padding: 150px 65px;
+          height: fit-content;
+          width: fit-content;
+          position: relative;
+          display: flex;
+          &:nth-of-type(even) {
+            margin-top: -200px;
+          }
+          &:nth-of-type(odd) {
+            margin-top: -250px;
+          }
+          > a {
+            overflow: hidden;
+            width: 430px;
+            height: 530px;
+            > img {
+              width: 100%;
+              object-fit: cover;
+              transition: 0.3s linear;
+              filter: brightness(0.8);
+            }
+            &:hover {
+              > img {
+                scale: 1.1;
+              }
+              ~ figcaption > h4 {
+                transform: translateX(-20px);
+              }
+            }
+          }
+          > figcaption {
+            width: 430px;
+            display: flex;
+            align-self: flex-end;
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex-direction: column;
+            position: absolute;
+            color: white;
+            > h4 {
+              display: flex;
+              transform: translateX(-35px);
+              font-weight: bolder;
+              font-family: $secondaryFont;
+              font-size: 22px;
+              transition: 0.3s linear;
+              width: 100%;
+            }
+            > p {
+              font-family: $primaryFont;
+              line-height: 30px;
+              width: 100%;
+              display: flex;
+              padding: 50px 10px;
+              justify-content: flex-start;
+            }
           }
         }
       }
-      >div:last-of-type{}
+      > div:last-of-type {
+        font-family: $secondaryFont;
+        color: white;
+        > h5 {
+        }
+        > p {
+          font-family: $primaryFont;
+        }
+        > a {
+        }
+      }
     }
     // end of thoughts
   }
