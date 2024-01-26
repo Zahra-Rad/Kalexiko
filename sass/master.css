@@ -14,6 +14,10 @@ a {
   width: 100%;
 }
 
+main > .row > footer > div:first-of-type > div:last-of-type > div {
+  border: 2px solid #d60a01;
+}
+
 body::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
@@ -824,6 +828,9 @@ main > .row > .client > .row > div > figure > img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+main > .row .thoughts {
+  border-bottom: 1px solid #1d1d1d;
+}
 main > .row .thoughts > h3 {
   width: 100%;
   display: flex;
@@ -902,12 +909,173 @@ main > .row .thoughts > .row figure > figcaption > p {
   justify-content: flex-start;
 }
 main > .row .thoughts > div:last-of-type {
+  background-color: #141313;
   font-family: Helvetica, sans-serif;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 120px;
+}
+main > .row .thoughts > div:last-of-type > h5 {
+  font-size: 25px;
 }
 main > .row .thoughts > div:last-of-type > p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 25px 0;
+  font-size: 17px;
 }
+main > .row .thoughts > div:last-of-type > a {
+  width: 175px;
+  height: 80px;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+main > .row .thoughts > div:last-of-type > a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: #d60a01;
+  width: 100%;
+  transition: 0.3s linear;
+  height: 100%;
+}
+main > .row .thoughts > div:last-of-type > a:hover::before {
+  left: 0;
+}
+main > .row .thoughts > div:last-of-type > a > span {
+  z-index: 2;
+}
+main > .row > footer {
+  width: 100%;
+  background-color: #141313;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main > .row > footer > div {
+  color: white;
+  width: 80%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main > .row > footer > div:first-of-type {
+  border-bottom: 1px solid #1d1d1d;
+  margin-top: 55px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+main > .row > footer > div:first-of-type > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > .row > footer > div:first-of-type > div:first-of-type {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main > .row > footer > div:first-of-type > div:first-of-type > h3 {
+  font-size: 30px;
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+}
+main > .row > footer > div:first-of-type > div:first-of-type > h3 > span {
+  padding: 0 10px;
+}
+main > .row > footer > div:first-of-type > div:first-of-type > p {
+  margin: 35px 0 25px;
+}
+main > .row > footer > div:first-of-type > div:first-of-type > figure {
+  width: 125px;
+}
+main > .row > footer > div:first-of-type > div:first-of-type > figure > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .row > footer > div:first-of-type > div:last-of-type {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main > .row > footer > div:first-of-type > div:last-of-type > h5 {
+  font-size: 25px;
+  font-weight: lighter;
+}
+main > .row > footer > div:first-of-type > div:last-of-type > p {
+  margin: 30px 0;
+}
+main > .row > footer > div:first-of-type > div:last-of-type > div {
+  width: 400px;
+  height: 40px;
+  display: flex;
+  border: 1px solid #1d1d1d;
+}
+main > .row > footer > div:first-of-type > div:last-of-type > div > input:first-of-type {
+  background-color: transparent;
+  color: #757575;
+  border: none;
+  width: 80%;
+  padding: 10px;
+}
+main > .row > footer > div:first-of-type > div:last-of-type > div > input:first-of-type:focus {
+  outline: none;
+}
+main > .row > footer > div:first-of-type > div:last-of-type > div > input:last-of-type {
+  background-color: #1f1f1f;
+  color: white;
+  border: none;
+  width: 20%;
+  font-weight: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+main > .row > footer > div:last-of-type {
+  display: flex;
+  padding: 30px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+main > .row > footer > div:last-of-type > h5 > span {
+  font-weight: lighter;
+}
+main > .row > footer > div:last-of-type > div > a {
+  color: #4a4a4a;
+  transition: 0.3s linear;
+  font-size: 20px;
+  padding: 0 10px;
+}
+main > .row > footer > div:last-of-type > div > a:hover {
+  color: #b5b5b5;
+}
+main > .row > footer > div:last-of-type > figure {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+main > .row > footer > div:last-of-type > figure > img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.7);
+}
+main > .row > footer > div:last-of-type > figure:hover > img {
+  filter: brightness(1);
+}
+
 .active > img {
   filter: grayscale(0) brightness(0.7) !important;
 }
